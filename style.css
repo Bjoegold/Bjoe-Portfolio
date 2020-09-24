@@ -1,0 +1,96 @@
+html{
+    scroll-behavior: smooth;
+}
+.main {
+    background-color:black;
+    display: grid;
+    /* border: 15px solid skyblue; */
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: 
+                         "maths eng eng "
+                         "gov phy phy "
+                         "bio civic civic"
+                         "social social social "
+                         "chem chem chem  "
+                         "data data data "
+                         "lit lit lit";
+  }
+  .logo{
+      grid-area: maths;
+      color:blue;
+      margin-left: 30px;
+  }
+  /* .logo h1{
+    margin-right: 30px;
+  } */
+  .navbar{
+      grid-area: eng;
+      margin-top: 23.9px;
+      margin-left: 220px;
+      word-spacing: 70px;
+      font-size: 28px;
+      
+     
+      
+  }
+  .navbar a{
+    text-decoration: none;
+    color: blue;
+  }
+  .navbar a:hover {
+      color: white;
+      border-bottom: 2px dashed rgb(255, 255, 255);
+  }
+  #active{
+      color: blue;
+  }
+  .about{
+    margin-left: 70px;
+    grid-area: gov;
+    margin-top: 90px;
+    word-spacing: 10px;
+    color: blue;
+  }
+  .about a{
+      text-decoration: none;
+      font-size: 20px;
+      color: blue;
+  }
+  .about a:hover{
+      color: white;
+  }
+  .about h1{
+      font-size: 80px;
+      color: blue;
+  }
+  .about  p{
+      font-size: 30px;
+  }
+  .top-image{
+    grid-area: phy;
+    margin-left: 225px;
+    margin-top: 90px;
+  }
+  .top-image img{
+      width: 500px;
+      height: 455px;
+  }
+  .about-me{
+      grid-area:bio;
+      margin-left: 70px;
+      margin-top: 100px;
+      color: blue;
+  }
+  .about-me h1{
+      font-size: 80px;
+  }
+.about-me2{
+    margin-top: 30px;
+    grid-area: civic;
+    color: blue;
+}
+.about-me2 p{
+    font-size: 30px;
+    line-height: 70px;
+}
